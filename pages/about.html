@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/estilo.css">
     <link rel="shortcut icon" href="/fotos/joysflowericon.png" type="image/x-icon">
+     <!-- añadimos bootstrap en head y al final de body-->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>ABOUT US</title>
 </head>
 
@@ -14,7 +16,7 @@
     </header>
 
     <nav class="nav">
-        <ul class="barnav"> <!-- dejar de añadir navs hasta q no este todo creado-->
+        <ul class="barnav">
             <li class="menu"><a href="/index.html">HOME</a></li>
             <li class="menu"><a href="/pages/about.html">ABOUT</a></li>
             <li class="menu"><a href="/pages/shop.html">SHOP</a></li>
@@ -24,45 +26,57 @@
     </nav>
 
     <section class="aboutus">
-        <div class="iframe">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/QpeopRSgCUc?si=oAOUh3ABitpCjkSr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        <div class="iframe-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/QpeopRSgCUc?si=oAOUh3ABitpCjkSr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
 
-        <h2 class="title-aboutus">title</h2>
+        <h2 class="title-aboutus">Welcome to our Floral family!</h2>
         <p class="paragraph-aboutus">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae provident, aliquam, quibusdam quod vitae omnis corporis obcaecati id perspiciatis sapiente fugit corrupti recusandae rerum alias, dignissimos laboriosam temporibus perferendis mollitia.
+            <br>
+            Your premier online flower destination! We're passionate about bringing beauty and emotion to your special moments. Our curated collection of blooms, expertly crafted arrangements, and dedication to exceptional service ensure that every experience with us is unforgettable. From celebrations to expressions of love and gratitude, let us be your partner in creating cherished memories, one bouquet at a time. 
 
             <br>
 
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum recusandae asperiores odit, labore dolorem exercitationem tempore temporibus id quod minima natus facere ab cupiditate nobis necessitatibus nihil incidunt accusantium. Voluptas.
-
-            <br>
-
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde suscipit odit accusamus repudiandae dolorum totam dicta ducimus vel doloremque, architecto, dignissimos nostrum, sint mollitia aperiam incidunt earum! Laudantium, minus! Quibusdam?
+            Thank you for choosing us to be a part of your journey – together, let's paint the world with petals and spread the fragrance of love!
         </p>
     </section>
 
     <section class="fotosabout">
 
-        <div class="galery">
-            <img src="/fotos/about2.jpeg" alt="Imagen">
-        </div>
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="/fotos/about1.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="/fotos/about2.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/fotos/about3.jpeg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
 
-        <div class="galery">
-            <img src="/fotos/about3.jpeg" alt="Imagen">
-        </div>
-
-        <div class="galery">
-            <img src="/fotos/about4.jpeg"alt="Imagen">
-        </div>
     </section>
 
-    <footer class="footerabout">
-        <ul class="menufooter">
-            <li class="policy">Coderhouse 2024</li>
-            <li class="policy">Joy's Flowers ♥️</li>
-            <li class="policy">Estefanía Carranza</li>
+    <footer class="footerservices">
+        <ul class="menufooter-services">
+            <li class="policy-services">Coderhouse 2024 ♥️</li>
+            <li class="policy-services">Joy's Flowers ♥️</li>
+            <li class="policy-services">Estefanía Carranza</li>
         </ul>
     </footer>
+
+    <!--link script bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
